@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data (keep directory structure, ignore large files)
+data/raw/*.csv
+data/raw/*.parquet
+data/processed/*.csv
+data/processed/*.parquet
+data/processed/*.db
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+creditcard.csv
+**/creditcard.csv
+
+# Models & artifacts
+models/*.joblib
+models/*.pkl
+artifacts/*
+!artifacts/.gitkeep
+!models/.gitkeep
+
+# Reports generated at runtime (keep structure)
+reports/figures/*.png
+reports/metrics/*.json
+!reports/figures/.gitkeep
+!reports/metrics/.gitkeep
+!reports/data_dictionary.md
+!reports/data_quality_report.md
+!reports/feature_dictionary.md
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
